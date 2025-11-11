@@ -196,7 +196,7 @@ class ReplaceableSegment implements Segment {
 
 const tooltipLink = (id: string, title: string, content: string): string => {
     return dedent`
-    <div class="tooltip">
+    <div class="lg:tooltip">
       <div class="tooltip-content max-w-2xl">
         <h3 class="text-xl p-2">${title}</h3>
         <div class="p-2 text-justify">${content}</div>
