@@ -3,7 +3,7 @@
     <input type="checkbox" class="drawer-toggle" />
     <div class="drawer-content flex flex-col items-center justify-center">
       <img src="/src/assets/logo.png" alt="DOOMTROOPERS" class="p-10" />
-      <h1 class="text-5xl p-5">RULES</h1>
+      <h1 class="text-3xl p-5">RULES</h1>
       <div class="flex flex-col">
         <Rule v-for="(rule, index) in rules" :path="[index]" :item="rule" />
       </div>
