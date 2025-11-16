@@ -1,9 +1,16 @@
 <template>
   <li>
-    <a :href="'#rule-' + path.join('-')"> {{ item.title }}</a>
-    <ul v-if="item.children">
-      <IndexItem v-for="(item, i) in item.children" :path="path.concat(i)" :item="item" />
-    </ul>
+    <details v-if="item.children.length > 1">
+      <summary>
+        <a :href="'#rule-' + path.join('-')"> {{ item.title }}</a>
+      </summary>
+      <ul>
+        <IndexItem v-for="(item, i) in item.children" :path="path.concat(i)" :item="item" />
+      </ul>
+    </details>
+    <template v-else>
+      <a :href="'#rule-' + path.join('-')"> {{ item.title }}</a>
+    </template>
   </li>
 </template>
 
