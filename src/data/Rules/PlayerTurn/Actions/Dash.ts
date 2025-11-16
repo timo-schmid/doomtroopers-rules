@@ -5,7 +5,10 @@ export const Dash = action(
     "Dash",
     1,
     inDividers([
-        alert("The same as the Move action, but instead of using the operative’s MV stat, it may move up to 3”."),
+        alert(
+            "The same as the Move action, but instead of using the operative’s MV stat, it may move up to 3”.",
+            "alert-success alert-soft"
+        ),
         alert(
             dedent`
             An operative may not perform this action while within control range of an enemy operative,

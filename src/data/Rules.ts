@@ -96,7 +96,6 @@ class ReplaceableSegment implements Segment {
 
 const tooltipLink = (id: string, title: string): string => {
     return dedent`
-    <!-- Open the modal using ID.showModal() method -->
     <a class="link link-primary" onclick="modal_${id}.showModal()">${title}</a>
     `
 }

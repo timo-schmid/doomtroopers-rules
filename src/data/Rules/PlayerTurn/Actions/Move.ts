@@ -5,7 +5,10 @@ export const Move = action(
     "Move",
     1,
     inDividers([
-        alert("Move the active operative up to its MV stat to a position in which it can be placed."),
+        alert(
+            "Move the active operative up to its MV stat to a position in which it can be placed.",
+            "alert-success alert-soft"
+        ),
         alert(
             dedent`
             It cannot move into or through the control range of any enemy operatives, unless there are already one or more

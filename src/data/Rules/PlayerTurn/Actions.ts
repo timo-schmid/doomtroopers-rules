@@ -11,6 +11,7 @@ import {Equip} from "@/data/Rules/PlayerTurn/Actions/Equip";
 import {Unequip} from "@/data/Rules/PlayerTurn/Actions/Unequip";
 import {UseConsumable} from "@/data/Rules/PlayerTurn/Actions/UseConsumable";
 import {Shoot} from "@/data/Rules/PlayerTurn/Actions/Shoot";
+import {Fight} from "@/data/Rules/PlayerTurn/Actions/Fight";
 
 
 export const Actions: Rule = rule(
@@ -31,7 +32,7 @@ export const Actions: Rule = rule(
     <div class="grid grid-cols-1 pt-4 pb-4">
         ${Move}
     </div>
-    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 pb-4">
+    <div class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-4 pb-4">
         ${Dash}
         ${FallBack}
         ${Charge}
@@ -41,7 +42,10 @@ export const Actions: Rule = rule(
         ${Equip}
         ${Unequip}
         ${UseConsumable}
+    </div>
+    <div class="grid grid-cols-1 xl:grid-cols-2 gap-4 pt-4 pb-4">
         ${Shoot}
+        ${Fight}
     </div>
     `,
     [
