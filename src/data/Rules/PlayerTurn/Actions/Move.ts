@@ -22,7 +22,7 @@ export const Move = action(
             "alert-error alert-soft"
         ),
         dedent`
-        <div class="grid grid-cols-4 gap-4">
+        <div class="grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
             ${alert(
                 dedent`
                     <h3 class="text-xl pb-2">Vault</h3>
