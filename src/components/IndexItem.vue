@@ -15,7 +15,7 @@
 </template>
 
 <script setup lang="ts">
-import {TreeItem} from '../model/TreeItem'
+import {TreeItem} from '@/model/TreeItem'
 defineProps<{
   path: number[]
   item: TreeItem

@@ -20,7 +20,7 @@
 
 <script setup lang="ts">
 import {TreeItem} from '@/model/TreeItem'
-import {linkify} from '@/data/Rules'
+import {linkify} from '@/util/linkify'
 
 defineProps<{
   path: number[]

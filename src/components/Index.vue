@@ -2,8 +2,8 @@
   <div class="drawer lg:drawer-open">
     <input type="checkbox" class="drawer-toggle" />
     <div class="drawer-content flex flex-col items-center justify-center">
-      <h1 class="text-5xl p-5">DOOMTROOPERS 2025</h1>
-      <h2 class="text-3xl p-5">Rules</h2>
+      <img src="/src/assets/logo.png" alt="DOOMTROOPERS" class="p-10" />
+      <h1 class="text-5xl p-5">RULES</h1>
       <div class="flex flex-col">
         <Rule v-for="(rule, index) in rules" :path="[index]" :item="rule" />
       </div>
@@ -18,8 +18,8 @@
 </template>
 
 <script setup lang="ts">
-import IndexItem from './IndexItem.vue'
-import {type TreeItem} from '../model/TreeItem'
+import IndexItem from '@/components/IndexItem.vue'
+import {type TreeItem} from '@/model/TreeItem'
 import Rule from './Rule.vue'
 defineProps<{
   rules: TreeItem[]
