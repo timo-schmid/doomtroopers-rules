@@ -237,10 +237,10 @@
     <br />
     Universal actions are actions that can be performed by all operatives unless specified otherwise. 
     The universal actions are listed below:
-    <div class="grid grid-cols-1 p-10">
+    <div class="grid grid-cols-1 pt-4 pb-4">
         ${Yl}
     </div>
-    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 p-10">
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 pb-4">
         ${Xl}
         ${Zl}
         ${Ql}
